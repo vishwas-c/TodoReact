@@ -1,7 +1,8 @@
 import React from 'react'
 
 function ContactCard (props) {
-  console.log(props)
+  props= props.contact
+  console.log(props.contact)
   return (
   <div className="contact-card">
     <img src="" alt="Blah blah"/>
