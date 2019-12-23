@@ -4,7 +4,9 @@ function TodoItem (props) {
   console.log(props)
   return (
     <div className="todoitem">
-      <input type="checkbox" onClick={()=> console.log("Clicked")} checked={props.item.completed}/>
+      <input type="checkbox" 
+      checked={props.item.completed} 
+      onChange={() => props.clickHandler(props.item.id)} />
       <p>{props.item.text}</p>
     </div>
   )
